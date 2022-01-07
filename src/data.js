@@ -1,7 +1,8 @@
 export const products = [
     {
         id: 1,
-        img: "https://images.pexels.com/photos/9887155/pexels-photo-9887155.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        // img: "https://images.pexels.com/photos/9887155/pexels-photo-9887155.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        img: './src\img\ots.jpg',
         link: "https://off-the-shelf.vercel.app/",
     },
     {
