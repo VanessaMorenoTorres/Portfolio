@@ -15,8 +15,8 @@ const About = () => {
       </div>
       <div className="a-right">
           <h1 className="a-title">About Me</h1>
-          <p className="a-sub"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloremque molestias possimus porro, blanditiis dolor, perferendis quaerat esse hic culpa ut quia dolorum. Aliquam, eaque recusandae ab odit adipisci in!</p>
-          <p className="a-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste optio officiis eius quis quaerat? Hic ex expedita commodi voluptate amet tempore consequatur, eveniet vel autem accusamus labore earum veritatis. </p>
+          <p className="a-sub"> A fullstack software developer and social worker who is passionate about accessibity and mental health.</p>
+          <p className="a-desc"> A  adipisicing elit. Corporis iste optio officiis eius quis quaerat? Hic ex expedita commodi voluptate amet tempore consequatur, eveniet vel autem accusamus labore earum veritatis. </p>
       </div>
     </div>
   );
