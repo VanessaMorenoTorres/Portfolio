@@ -2,8 +2,21 @@ import './contact.css'
 import Phone from '../../img/phone.png'
 import Email from '../../img/email.png'
 import Address from '../../img/address.png'
+import { useContext, useRef, useState } from 'react'
+import { ThemeContext } from '../../context'
 
 const Contact = () => {
+    const formRef = useRef()
+    const [done, setDone] = useState(false)
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
+    const handleSubmit = (e)=>{
+        e.preventDefault()
+        
+    }
+
+
     return(
         <div className="c">
             <div className="c-bg"></div>
@@ -28,11 +41,11 @@ const Contact = () => {
                     <p className='c-desc'>
                         <b>What's your story?</b> Get in touch, how can I help you? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi in odit repellendus ex consequatur tempora. Laudantium, iusto rem nesciunt, velit ipsam impedit dignissimos dolor mollitia recusandae officiis illum, obcaecati eum!
                     </p>
-                    <form>
-                        <input type="text" placeholder='Name' name='user_name'/>
-                        <input type="text" placeholder='Subject' name='user_subject'/>
-                        <input type="text" placeholder='Email' name='user_email'/>
-                        <textarea name="message" placeholder='Message' id="" cols="30" rows="5"></textarea>
+                    <form ref={formRef} onSubmit={handleSubmit}> 
+                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Name' name='user_name'/>
+                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Subject' name='user_subject'/>
+                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Email' name='user_email'/>
+                        <textarea style={{backgroundColor: darkMode && "#333"}} name="message" placeholder='Message' id="" cols="30" rows="5"></textarea>
                         <button>Submit</button>
                     </form>
                 </div>
