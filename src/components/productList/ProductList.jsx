@@ -6,8 +6,8 @@ const ProductList = () => {
     return (
         <div className="pl">
             <div className="pl-text">
-                <h1 className="pl-title">Placeholder Title (Create & Inspire?)</h1>
-                <p className="pldesc">
+                <h2 className="pl-title">Create & Inspire</h2>
+                <p className="pl-desc">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus corrupti omnis neque minima laboriosam corporis voluptates exercitationem, expedita maiores consequatur deserunt iure nesciunt nam, iusto vero eveniet, reprehenderit temporibus.
                 </p>
             </div>

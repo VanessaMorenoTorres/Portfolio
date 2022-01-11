@@ -28,13 +28,16 @@
 }
 
 @media  screen and (max-width: 480px) {
-    .p1{
+    .pl{
         padding: 10px;
     }
-    .p1-texts{
+    .pl-texts{
         width: 100%;
     }
-    .p1-desc{
+    .pl-desc{
         display: none;
+    }
+    .pl-title{
+        font-size: 30px;
     }
 }
