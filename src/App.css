@@ -1,0 +1,28 @@
+:root{
+    --primary-purple: #800080
+}
+
+nav a.nav-link{
+    font-weight: 500;
+    cursor: pointer;
+    /* border: .0375rem solid black !important; */
+    /* background-color: blueviolet !important; */
+}
+.navbar-nav > li> a{
+    border-top: .1875rem solid white;
+}
+
+nav .container{
+    border: .0375rem solid black !important;
+    margin: 0pt;
+    display: flex;
+}
+
+.navbar-nav > li> a.active, .navbar-nav > li> a.active:focus{
+    border-top: .1875rem solid var(--primary-purple);
+    color: black;
+}
+
+.navbar-nav > li> a:hover{
+    border-top: .1875rem solid var(--primary-purple);
+}
