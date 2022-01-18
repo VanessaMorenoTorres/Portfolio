@@ -7,6 +7,7 @@ import Contact from "./components/contact/Contact";
 import Toggle from "./components/toogle/Toggle";
 import { ThemeContext } from "./context";
 import { useContext } from "react";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
   const darkMode = theme.state.darkMode;
   return (
     <div className="App" style={{backgroundColor: darkMode ? "#222": "white" , color: darkMode && "white" }}>
+        <Navbar/>
         <Toggle />
         <Intro />
         <About />
