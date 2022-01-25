@@ -8,6 +8,7 @@ import Toggle from "./components/toogle/Toggle";
 import { ThemeContext } from "./context";
 import { useContext } from "react";
 import Navbar from "./components/Navbar/Navbar";
+import Navigation from "./components/navigation/Navigation";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App" style={{backgroundColor: darkMode ? "#222": "white" , color: darkMode && "white" }}>
         <Navbar/>
+        <Navigation/>
         <Toggle />
         <Intro />
         <About />
