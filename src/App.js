@@ -7,10 +7,10 @@ import Contact from "./components/contact/Contact";
 import Toggle from "./components/toogle/Toggle";
 import { ThemeContext } from "./context";
 import { useContext } from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Navigation from "./components/navigation/Navigation";
+// import Navigation from "./components/navigation/Navigation";
 import {BrowserRouter as Router} from 'react-router-dom'
 import react from "react";
+import Header from "./components/Header";
 
 function App() {
   const theme = useContext(ThemeContext)
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App" style={{backgroundColor: darkMode ? "#222": "white" , color: darkMode && "white" }}>
        <Router>
-       <Navbar/>
+       <Header/>
        </Router>
         
         {/* <Navigation/> */}
