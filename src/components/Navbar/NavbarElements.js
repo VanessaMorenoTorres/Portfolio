@@ -4,11 +4,12 @@ import {Link as LinkS} from 'react-scroll'
 
 export const Nav = styled.nav`
     background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
-    height: 80px;
+    height: 60px;
     margin-top: -80px;
     display: flex;
     justify Content: center;
     align-items: center;
+    align-content: center;
     font-size: 1rem;
     position: sticky;
     top:0;
@@ -22,6 +23,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    align-content: center;
     height: 80px;
     z-indez:1;
     width: 100%;
@@ -59,6 +61,7 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
     display:flex;
     align-items: center;
+    align-content: center;
     list-style: none;
     text-align: center;
     margin-right: -22px;
@@ -69,16 +72,18 @@ export const NavMenu = styled.ul`
 `;
 export const NavItem = styled.li`
     height:80px;
+    align-content: center;
 `;
 export const NavLinks = styled(LinkS)`
     color: #fff;
     display: flex;
     align-items: center;
+    align-content: center;
     text-decoration:none;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
     &.active{
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid #800080;
     }
 `;
